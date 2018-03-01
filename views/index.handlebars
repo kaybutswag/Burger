@@ -1,7 +1,13 @@
-<h1>What's Cooking?</h1>
 
-<h2>Orders to be Made: </h2>
+<header>
+  <h1>Harper Street Cafe</h1>
+  <h3>Today's Orders</h3>
+</header>
 
+<section id="sec1">
+<h3>Orders to be Made: </h3>
+
+<form class="active">
 <ol>
   {{#each burgers}}
     {{#unless devoured}}
@@ -15,9 +21,13 @@
     {{/unless}}
   {{/each}}
 </ol>
+</form>
+</section>
 
-<h2>Orders Completed for the Day: </h2>
+<section id="sec2">
+<h3>Orders Completed for the Day: </h3>
 
+<form class="active">
 <ol>
   {{#each burgers}}
     {{#if devoured}}
@@ -30,14 +40,20 @@
     {{/if}}
   {{/each}}
 </ol>
+</form>
 
-<h2>Add New Order</h2>
+</section>
+
+<section id="sec3">
+<h3>Add New Order</h3>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="neworder">Order:</label>
-    <input type="text" id="neworder" name="burger_name">
+    <span><label for="neworder">Order:</label>
+    <input type="text" id="neworder" name="burger_name" >
+    <button type="submit" class="submit">Add New Order</button>
   </div>
 
-  <button type="submit">New Order</button>
+  
 </form>
+</section>

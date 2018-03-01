@@ -1,0 +1,102 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Nunito', sans-serif;
+	background-image: url("https://www.publicdomainpictures.net/pictures/210000/velka/vibrant-abstract-background-14850099188me.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 70%;
+	height: 110px;
+	margin-left: 15%;
+	border:1px solid white;
+	margin-bottom: 10px;
+}
+
+
+h1{
+	font-family: 'Coiny', cursive;
+	height: 48px;
+	font-size: 48px;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+h3{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+
+header, section{
+	border-radius: 20px;
+}
+
+.create-form{
+	text-align: center;
+}
+
+.active{
+	padding-left: 25%;
+}
+
+.order-status,.delete-order {
+	margin-left: .5em;
+}
+
+
+#sec1,#sec2, #sec3{
+	margin-left: 15%;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 70%;
+	border:1px solid white;
+	margin-bottom: 10px;
+}
+
+
+#sec1,#sec2{
+	height: 220px;
+	overflow-y: auto;
+	padding-bottom: 10px;
+}
+
+
+#sec3{
+	height: 100px;
+}
+
+
+button {
+	font-family: 'Nunito', sans-serif;
+    background-color: #EB5E55;
+    border: none;
+    color: #1F1A38;
+    border: 1px solid white;
+    line-height: 28px;
+    height: 28px;
+    margin-bottom: 0;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+label{
+	display: inline-block;
+	font-size: 18px;
+}
+#neworder{
+	height: 28px;
+	padding: 0;
+	width: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
