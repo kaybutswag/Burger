@@ -1,0 +1,43 @@
+<h1>What's Cooking?</h1>
+
+<h2>Orders to be Made: </h2>
+
+<ol>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>
+        {{burger_name}}
+        <button class="order-status" data-id="{{id}}" data-newstat="{{devoured}}">
+          Finished Order
+        </button>
+        <button class="delete-order" data-id="{{id}}">Order Cancelled</button>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ol>
+
+<h2>Orders Completed for the Day: </h2>
+
+<ol>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>
+        {{burger_name}}
+        <button class="order-status" data-id="{{id}}" data-newstat="{{devoured}}">
+          Remake Order
+        </button>
+      </li>
+    {{/if}}
+  {{/each}}
+</ol>
+
+<h2>Add New Order</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="neworder">Order:</label>
+    <input type="text" id="neworder" name="burger_name">
+  </div>
+
+  <button type="submit">New Order</button>
+</form>
