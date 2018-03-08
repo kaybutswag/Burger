@@ -6,6 +6,7 @@ body{
 	font-family: 'Nunito', sans-serif;
 	background-image: url("https://www.publicdomainpictures.net/pictures/210000/velka/vibrant-abstract-background-14850099188me.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
     background-size: cover;
 }
 
@@ -45,7 +46,8 @@ header, section{
 }
 
 .active{
-	padding-left: 33%;
+	padding-left: 30%;
+	padding-right: 10%;
 }
 
 .order-status,.delete-order {
@@ -100,3 +102,6 @@ label{
 	margin-right: 10px;
 }
 
+li{
+	font-size: 1.5rem;
+}
