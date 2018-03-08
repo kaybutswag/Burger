@@ -14,9 +14,9 @@
       <li>
         {{burger_name}}
         <button class="order-status" data-id="{{id}}" data-newstat="{{devoured}}">
-          Finished Order
+          Completed
         </button>
-        <button class="delete-order" data-id="{{id}}">Order Cancelled</button>
+        <button class="delete-order" data-id="{{id}}">Cancelled</button>
       </li>
     {{/unless}}
   {{/each}}
@@ -34,7 +34,7 @@
       <li>
         {{burger_name}}
         <button class="order-status" data-id="{{id}}" data-newstat="{{devoured}}">
-          Remake Order
+          Remake
         </button>
       </li>
     {{/if}}
